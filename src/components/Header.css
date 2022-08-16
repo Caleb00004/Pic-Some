@@ -5,6 +5,11 @@ header {
     display: flex;
 }
 
+header > a {
+    color: white;
+    text-decoration: none;
+}
+
 header > i{
     margin-left: auto;
     margin-top: auto;

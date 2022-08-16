@@ -2,7 +2,7 @@ import Header from './components/Header'
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
 import Checkout from './Pages/Checkout';
-import Image from './Pages/Image';
+import Photos from './Pages/Photos';
 
 /* 
 New URL for icons
@@ -13,10 +13,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Home page</h1>
 
       <Routes>
-        <Route path='/' element={<Image />}/>
+        <Route path='/' element={<Photos />}/>
         <Route path='/checkout' element={<Checkout />}/>
       </Routes>
     </div>
