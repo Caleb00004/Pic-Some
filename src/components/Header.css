@@ -1,0 +1,12 @@
+header {
+    color: white;
+    background-color: rgb(246, 154, 169);
+    padding: 1.5% 1.5%;
+    display: flex;
+}
+
+header > i{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
