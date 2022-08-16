@@ -6,7 +6,7 @@ import {useContext} from 'react'
 function Header() {
     const contextData = useContext(context)
     console.log(contextData)
-    
+
     const checkoutPage = useNavigate()
     return (
         <header>

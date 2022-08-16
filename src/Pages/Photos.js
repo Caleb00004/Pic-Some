@@ -1,6 +1,10 @@
+import './photos.css'
+
 function Photos () {
     return (
-        <h1>Photos Page</h1>
+        <div className="photos-page">
+            <h1>Photos Page</h1>
+        </div>
     )
 }
 
