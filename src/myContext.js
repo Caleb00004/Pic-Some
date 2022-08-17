@@ -6,6 +6,7 @@ function ContextProvider(props) {
     const [photoArray, setPhotoArray] = React.useState()
     const [imgExist, setImgExist] = React.useState(false)
 
+    // fecthing image data.
     React.useEffect(() => {
         async function fetchPhotos() {
             const response = await fetch('https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json')
@@ -18,6 +19,7 @@ function ContextProvider(props) {
         fetchPhotos()
     },[])
 
+    // function to toggle isFavorite property in photoArray state
     function toogleIsfavorite(id) {
         console.log(id)
         setPhotoArray(prevState => {
