@@ -24,7 +24,7 @@ function Image(props) {
     let heartIcon = null
 
     // fuction to choose which heartIcon to dispay [filled or notFilled]
-    function hearIconLogic() {
+    function heartIconLogic() {
         if (photoArray[props.id-1].isFavorite) {
             heartIcon = <img onClick={() => toogleIsfavorite(props.id)} className='ri-heart-line favorite' src={heartFillImg}/>
         } else if(hovered) {
