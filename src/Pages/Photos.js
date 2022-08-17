@@ -11,7 +11,7 @@ function Photos () {
         <div className="photos-page">
         {    
             imgExist && photoArray.map((img , i) => (
-            <Image key={img.id} img={img} className={getClass(i)} id={img.id}/>
+            <Image key={img.id} img={img} className={getClass(i)} />
             )) 
         }
         </div>
