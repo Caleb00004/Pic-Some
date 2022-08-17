@@ -12,7 +12,12 @@ header > a {
 }
 
 header > i{
+    color: rgb(28, 26, 97);
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+header > i:hover{
+    color: white
 }

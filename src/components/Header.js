@@ -1,11 +1,11 @@
 import './Header.css'
 import {Link, useNavigate} from 'react-router-dom'
-import {context} from '../myContext'
-import {useContext} from 'react'
+//import {context} from '../myContext'
+//import {useContext} from 'react'
 
 function Header() {
-    const contextData = useContext(context)
-    console.log(contextData)
+//    const contextData = useContext(context)
+//    console.log(contextData)
 
     const checkoutPage = useNavigate()
     return (
