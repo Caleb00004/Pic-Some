@@ -34,7 +34,6 @@ function ContextProvider(props) {
 
             return (newArray)
         })
-
     }
 
     // function to toggle isFavorite property in photoArray state
