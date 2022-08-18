@@ -5,6 +5,7 @@ const context = createContext()
 function ContextProvider(props) {
     const [photoArray, setPhotoArray] = React.useState()
     const [imgExist, setImgExist] = React.useState(false)
+    const [cartArray, setCartArray] = React.useState([])
 
     // fecthing image data.
     React.useEffect(() => {
@@ -18,6 +19,23 @@ function ContextProvider(props) {
 
         fetchPhotos()
     },[])
+
+    function addToCart(imgItem) {
+        setCartArray(prevState => (
+            [...prevState, imgItem]
+        ))
+    }
+
+    function subtractFromCart(imgItem) {
+        setCartArray(prevState => {
+            let newArray = prevState.filter(item => (
+                item.id != imgItem.id
+            ))
+
+            return (newArray)
+        })
+
+    }
 
     // function to toggle isFavorite property in photoArray state
     function toogleIsfavorite(id) {
@@ -33,9 +51,10 @@ function ContextProvider(props) {
     }
 
 //    console.log('after decare function')
-    console.log(photoArray)
+//    console.log(photoArray)
+//    console.log(cartArray)
     return (
-        <context.Provider value={{photoArray, toogleIsfavorite , imgExist,}}>
+        <context.Provider value={{photoArray, toogleIsfavorite , imgExist, addToCart, cartArray, subtractFromCart}}>
             {props.children}
         </context.Provider>
     )
