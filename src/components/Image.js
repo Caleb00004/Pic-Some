@@ -1,8 +1,8 @@
 import React from 'react'
-import heartImg from './heart-line.png'
-import addImg from './add-circle-line.png'
-import heartFillImg from './heart-fill.png' 
-import cartImg from './shopping-cart-fill.png'
+import heartImg from './icons/heart-line.png'
+import addImg from './icons/add-circle-line.png'
+import heartFillImg from './icons/heart-fill.png' 
+import cartImg from './icons/shopping-cart-fill.png'
 import {context} from '../myContext'
 import {useContext} from 'react'
 import PropTypes from 'prop-types'
@@ -46,7 +46,7 @@ function Image(props) {
     }  
 
     heartIconLogic()
-    console.log("ran")
+//    console.log("ran")
     return (
         <div onMouseOver={handleHover} onMouseOut={handleMouseGone} className={`${props.className} image-container`}>
             <img src={props.img.url} className="image-grid"/>

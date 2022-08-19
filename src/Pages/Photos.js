@@ -2,8 +2,8 @@ import Image from '../components/Image'
 import {context} from '../myContext'
 import {useContext} from 'react'
 import {getClass} from '../utils/gridFunction'
+import './Page-Styles/photos.css'
 
-import './photos.css'
 function Photos () {
     const {photoArray, imgExist} = useContext(context)
 

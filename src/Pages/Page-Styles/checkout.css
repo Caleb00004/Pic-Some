@@ -1,0 +1,32 @@
+
+.checkout-page {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cart-items {
+    display: flex;
+    padding: 10px;
+/*    background-color: red; */
+    height: 100px;
+
+}
+
+.cart-items > p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 70%;
+
+}
+
+.bin-image {
+    margin-top: auto;
+    margin-bottom: auto;    
+    margin-right: 1%;
+}
+
+.bin-image:hover {
+    background-color: palevioletred;
+}
+
+

@@ -36,6 +36,10 @@ function ContextProvider(props) {
         })
     }
 
+    function clearCart() {
+        setCartArray([])
+    }
+
     // function to toggle isFavorite property in photoArray state
     function toogleIsfavorite(id) {
         console.log(id)
@@ -53,7 +57,7 @@ function ContextProvider(props) {
 //    console.log(photoArray)
 //    console.log(cartArray)
     return (
-        <context.Provider value={{photoArray, toogleIsfavorite , imgExist, addToCart, cartArray, subtractFromCart}}>
+        <context.Provider value={{photoArray, toogleIsfavorite , imgExist, addToCart, cartArray, subtractFromCart, clearCart}}>
             {props.children}
         </context.Provider>
     )
