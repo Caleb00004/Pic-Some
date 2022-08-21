@@ -4,6 +4,11 @@
     text-align: center;
 }
 
+.checkout-page > h1,h3 {
+/*    font-size: 1.7vw; */
+    font-size: clamp(1rem, 1.7vw, 2rem);
+}
+
 .cart-items {
     display: flex;
     padding: 10px;
@@ -30,3 +35,9 @@
 }
 
 
+@media only screen and (max-width: 750px) {
+
+    .cart-items > p {
+        margin-left: 60%;
+    }
+  }

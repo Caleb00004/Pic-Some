@@ -3,21 +3,18 @@ import React, {useContext} from 'react'
 import binImg from './delete-bin-line.png'
 import fillBinImg from './delete-bin-5-fill.png'
 import './Page-Styles/checkout.css'
-import useHover from '../useHover'
 
 function Checkout() {
     const { cartArray, subtractFromCart, clearCart } = useContext(context)
     const [buttonText, setButtonText] = React.useState('Place Order')
-    const {isHovered, handleHover, handleMouseGone} = useHover()
-    const [binIcon, setBinIcon] = React.useState(binImg)
+//    const [binIcon, setBinIcon] = React.useState(binImg)  
+
 
     const cartItems = cartArray.map(cartItem => (
             <div key={cartItem.id} className='cart-items'>
                 <img 
                     onClick={() => subtractFromCart(cartItem)}
                     className='bin-image' height ={'25%'}
-                    onMouseOver={handleHover}
-                    onMouseOut={handleMouseGone}
                     src={binImg}
                 />
                 <img width={'20%'} src={cartItem.url}/>
